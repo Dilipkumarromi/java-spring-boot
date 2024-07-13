@@ -5,6 +5,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class BeansMethodCreating {
     void apple(){
-        System.out.println("Apple eating?");
+        System.out.println("Server is running...?");
     }
 }
