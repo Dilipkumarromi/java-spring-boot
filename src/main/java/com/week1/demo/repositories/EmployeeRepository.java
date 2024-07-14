@@ -10,4 +10,5 @@ import java.util.Optional;
 @Repository
 public interface EmployeeRepository  extends JpaRepository<EmployeeEntity,Long> {
 
+    boolean deleteEmployeeById(Long id);
 }
