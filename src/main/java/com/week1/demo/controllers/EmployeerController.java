@@ -19,12 +19,12 @@ public class EmployeerController {
     private EmployeeSevice employeeSevice;
 
     @GetMapping(path = "/")
-     public List<EmployeeEntity> getEmployee() {
+     public List<EmployeerDTO> getEmployee() {
         System.out.println("api working");
         return  employeeSevice.getEmployee(); // => this controller is handled by EmployeeService and apply database query
     }
     @PostMapping(path = "/create")
-    public EmployeeEntity createEmployee(@RequestBody EmployeeEntity inputEmployeer) {
+    public EmployeerDTO createEmployee(@RequestBody EmployeerDTO inputEmployeer) {
         return employeeSevice.createEmployee(inputEmployeer);
     }
 
