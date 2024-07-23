@@ -1,0 +1,1 @@
+INSERT INTO tlb_product (price,sku,title_x) values (12.4,4,'parle734','Perle Buscuit')
